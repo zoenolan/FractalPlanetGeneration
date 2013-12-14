@@ -79,7 +79,7 @@ public class TEdge
 	// check to see if the edge is subdivided
 	private boolean IsSubdivided()
 	{
-		if (_Edge1==null)
+		if (_Edge1 == null)
 		{
 			return false;
 		}
@@ -92,14 +92,14 @@ public class TEdge
 	// subdivide the edge
 	public void Subdivide()
 	{
-		if (this.IsSubdivided()==false)
+		if (this.IsSubdivided() == false)
 		{
 			// work out mid point and displace it
 			TVector3d MidPoint;
 			int NewId;
 
 			// work out the mid point
-			MidPoint=new  TVector3d(
+			MidPoint = new  TVector3d(
 				_TopEnd.Position().X() + ((_BottomEnd.Position().X() - _TopEnd.Position().X()) / 2.0),
 				_TopEnd.Position().Y() + ((_BottomEnd.Position().Y() - _TopEnd.Position().Y()) / 2.0),
 				_TopEnd.Position().Z() + ((_BottomEnd.Position().Z() - _TopEnd.Position().Z()) / 2.0));
@@ -125,15 +125,3 @@ public class TEdge
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-

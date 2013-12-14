@@ -38,7 +38,7 @@ public class TPolygon
 
 	private boolean IsSubdivided()
 	{
-		if (_Poly1==null)
+		if (_Poly1 == null)
 		{
 			return false;
 		}
@@ -94,9 +94,9 @@ public class TPolygon
 			else
 			{
 				// create polygon
-				_Poly1= new TPolygon(E7, E3, E1);
-				_Poly2= new TPolygon(E6, E8, E2);
-				_Poly3= new TPolygon(E4, E9, E5);
+				_Poly1 = new TPolygon(E7, E3, E1);
+				_Poly2 = new TPolygon(E6, E8, E2);
+				_Poly3 = new TPolygon(E4, E9, E5);
 			}
 		}
 		else if (A1.IsEqual(B2))
@@ -153,9 +153,9 @@ public class TPolygon
 		}
 	}
 
-	public void Generate(int Level,Vector Points)
+	public void Generate(int Level, Vector Points)
 	{   
-		if (Level==0)
+		if (Level == 0)
 		{
 			// use this level of the QTM
 
@@ -201,7 +201,7 @@ public class TPolygon
 		else
 		{
 			// check to see if the polygon is subdivided 
-			if (this.IsSubdivided()==false)
+			if (this.IsSubdivided() == false)
 			{
 				// subdivide the polygon
 				this.Subdivide(); 

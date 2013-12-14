@@ -35,18 +35,18 @@ public class TQtm
 		TVertex Vertex6 = new TVertex(new TVector3d( 0.0f,  0.0f, -1.0f), 3);
  
 		// create the 12 edges
-		TEdge Edge1  = new TEdge(Vertex1, Vertex3, Seed, (float)(SD/2.0));
-		TEdge Edge2  = new TEdge(Vertex1, Vertex4, Seed, (float)(SD/2.0));     
-		TEdge Edge3  = new TEdge(Vertex1, Vertex5, Seed, (float)(SD/2.0));
-		TEdge Edge4  = new TEdge(Vertex1, Vertex6, Seed, (float)(SD/2.0));
-		TEdge Edge5  = new TEdge(Vertex2, Vertex3, Seed, (float)(SD/2.0));
-		TEdge Edge6  = new TEdge(Vertex2, Vertex4, Seed, (float)(SD/2.0));
-		TEdge Edge7  = new TEdge(Vertex2, Vertex5, Seed, (float)(SD/2.0));
-		TEdge Edge8  = new TEdge(Vertex2, Vertex6, Seed, (float)(SD/2.0));
-		TEdge Edge9  = new TEdge(Vertex3, Vertex5, Seed, (float)(SD/2.0));
-		TEdge Edge10 = new TEdge(Vertex3, Vertex6, Seed, (float)(SD/2.0));
-		TEdge Edge11 = new TEdge(Vertex4, Vertex5, Seed, (float)(SD/2.0));
-		TEdge Edge12 = new TEdge(Vertex4, Vertex6, Seed, (float)(SD/2.0));
+		TEdge Edge1  = new TEdge(Vertex1, Vertex3, Seed, (float)(SD / 2.0));
+		TEdge Edge2  = new TEdge(Vertex1, Vertex4, Seed, (float)(SD / 2.0));     
+		TEdge Edge3  = new TEdge(Vertex1, Vertex5, Seed, (float)(SD / 2.0));
+		TEdge Edge4  = new TEdge(Vertex1, Vertex6, Seed, (float)(SD / 2.0));
+		TEdge Edge5  = new TEdge(Vertex2, Vertex3, Seed, (float)(SD / 2.0));
+		TEdge Edge6  = new TEdge(Vertex2, Vertex4, Seed, (float)(SD / 2.0));
+		TEdge Edge7  = new TEdge(Vertex2, Vertex5, Seed, (float)(SD / 2.0));
+		TEdge Edge8  = new TEdge(Vertex2, Vertex6, Seed, (float)(SD / 2.0));
+		TEdge Edge9  = new TEdge(Vertex3, Vertex5, Seed, (float)(SD / 2.0));
+		TEdge Edge10 = new TEdge(Vertex3, Vertex6, Seed, (float)(SD / 2.0));
+		TEdge Edge11 = new TEdge(Vertex4, Vertex5, Seed, (float)(SD / 2.0));
+		TEdge Edge12 = new TEdge(Vertex4, Vertex6, Seed, (float)(SD / 2.0));
 
 		// create the 8 polygons
 		_A = new TPolygon(Edge1,  Edge3,  Edge9);     
@@ -72,4 +72,3 @@ public class TQtm
 		_H.Generate(Level, Points) ;
 	}
 }
-
